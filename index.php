@@ -2,18 +2,17 @@
 <?php $ini_array = parse_ini_file("/config/app.properties");   ?>
   body {background-color:  <?php print($ini_array['color']); ?> }
   
-  div.container {
+ div.container {
     height: 10em;
-    position: relative }
-  
-  div.container p {
-    margin: 0;
+    padding: 10px;
+    text-align: center;
     background: yellow;
     position: absolute;
     top: 50%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%) }
+  
   
 </style>
 
