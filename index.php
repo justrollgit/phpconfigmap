@@ -17,7 +17,7 @@ $dbpwd = getenv("password");
 $dbname = getenv("database_name");
 $connection = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
 if ($connection->connect_errno) {
-    print "<b><font style='color: red;'>Database is down</font></b>"
+    print "<b><font style='color: red;'>Database is down</font></b>";
     exit();
 } else {
     print "<h2 style='color: green'>Connected to the database</h2>");
