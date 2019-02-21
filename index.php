@@ -10,10 +10,11 @@ Welcome to our little demo
 
 <?php
 $dburi = getenv("uri");
+$dbhost = parse_url($dburi)["host']
 $dbuser = getenv("username");
 $dbpwd = getenv("password");
 $dbname = getenv("database_name");
-$connection = new mysqli($dburi, $dbuser, $dbpwd, $dbname);
+$connection = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
 if ($connection->connect_errno) {
     printf("Connect failed: %s\n", $mysqli->connect_error);
     exit();
