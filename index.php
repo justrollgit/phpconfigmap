@@ -4,7 +4,5 @@
 </style>
 
 
-<?php
-
 Welcome to our little demo 
-?>
+
