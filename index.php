@@ -10,7 +10,7 @@ Welcome to our little demo
 
 <?php
 $dburi = getenv("uri");
-$dbhost = parse_url($dburi)["host'];
+$dbhost = parse_url($dburi)['host'];
 $dbuser = getenv("username");
 $dbpwd = getenv("password");
 $dbname = getenv("database_name");
