@@ -31,7 +31,7 @@ $dbhost = parse_url($dburi)['host'];
 $dbuser = getenv("username");
 $dbpwd = getenv("password");
 $dbname = getenv("database_name");
-$connection = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
+$connection = @ new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
 if ($connection->connect_errno) {
     print "<b><font style='color: red;'>Database is down</font></b>";
     exit();
