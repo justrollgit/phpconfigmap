@@ -8,7 +8,7 @@
     height: 10em;
     padding: 10px;
     text-align: center;
-    background: #<?php print(substr(bin2hex( gethostname() ), strlen( gethostname() )-6, 6)); ?>;
+    background: #<?php print(substr(bin2hex( gethostname() ), strlen( bin2hex(gethostname()) )-6, 6)); ?>;
     position: absolute;
     top: 50%;
     left: 50%;
