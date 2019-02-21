@@ -4,9 +4,10 @@
 </style>
 
 
-Welcome to our little demo 
+<h1>Welcome to our little demo </h1>
 <br>
 <b>Hostname</b> : <?php echo gethostname();  ?>
+<br>
 
 <?php
 $dburi = getenv("uri");
@@ -16,10 +17,10 @@ $dbpwd = getenv("password");
 $dbname = getenv("database_name");
 $connection = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
 if ($connection->connect_errno) {
-    printf("Connect failed: %s\n", $mysqli->connect_error);
+    print "<b><font style='color: red;'>Database is down</font></b>"
     exit();
 } else {
-    printf("Connected to the database");
+    print "<h2 style='color: green'>Connected to the database</h2>");
 }
 $connection->close();
 
