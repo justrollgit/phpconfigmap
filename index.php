@@ -20,7 +20,7 @@ if ($connection->connect_errno) {
     print "<b><font style='color: red;'>Database is down</font></b>";
     exit();
 } else {
-    print "<h2 style='color: green'>Connected to the database</h2>");
+    print "<h2 style='color: green'>Connected to the database</h2>";
 }
 $connection->close();
 
