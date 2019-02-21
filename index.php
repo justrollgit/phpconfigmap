@@ -33,10 +33,10 @@ $dbpwd = getenv("password");
 $dbname = getenv("database_name");
 $connection = @ new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
 if ($connection->connect_errno) {
-    print "<b><font style='color: red;'>Database is down</font></b>";
+    print "<b><H2><img src='https://upload.wikimedia.org/wikipedia/commons/5/52/Nuvola_apps_error.png' height=25 /><font style='color: red;'>Database is down</font></h2></b>";
     exit();
 } else {
-    print "<h2 style='color: green'>Connected to the database</h2>";
+    print "<h2 style='color: green'><img src=https://upload.wikimedia.org/wikipedia/commons/0/01/Nuvola_apps_krec_green.png height=25 />Connected to the database</h2>";
 }
 $connection->close();
 
