@@ -6,4 +6,4 @@
 
 Welcome to our little demo 
 <br>
-<b>Hostname</b> : <?php echo gethostname(); / ?>
+<b>Hostname</b> : <?php echo gethostname();  ?>
