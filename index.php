@@ -8,7 +8,7 @@ Welcome to our little demo
 <br>
 <b>Hostname</b> : <?php echo gethostname();  ?>
 
-<? php
+<?php
 $dburi = getenv("uri");
 $dbuser = getenv("username");
 $dbpwd = getenv("password");
