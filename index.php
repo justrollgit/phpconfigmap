@@ -22,7 +22,7 @@
 
 <div class=container>
   <p>
-    <h1>Welcome to our little demo </h1>    <br>
+    <h1>Welcome to our little demo ongoing</h1>    <br>
      <b>Hostname</b> : <?php echo gethostname();  ?>
      <br>
 <?php
