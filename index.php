@@ -1,3 +1,5 @@
+
+
 <style>
 <?php $ini_array = parse_ini_file("/config/app.properties");   ?>
   body {background-color:  <?php print($ini_array['color']); ?> }
@@ -6,7 +8,7 @@
     height: 10em;
     padding: 10px;
     text-align: center;
-    background: yellow;
+    background: #<?php print(substr(bin2hex( gethostname() ), strlen( gethostname() )-6, 6)); ?>;
     position: absolute;
     top: 50%;
     left: 50%;
