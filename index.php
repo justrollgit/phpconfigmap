@@ -7,3 +7,19 @@
 Welcome to our little demo 
 <br>
 <b>Hostname</b> : <?php echo gethostname();  ?>
+
+<? php
+$dburi = getenv("uri");
+$dbuser = getenv("username");
+$dbpwd = getenv("password");
+$dbname = getenv("database_name");
+$connection = new mysqli($dburi, $dbuser, $dbpwd, $dbname);
+if ($connection->connect_errno) {
+    printf("Connect failed: %s\n", $mysqli->connect_error);
+    exit();
+} else {
+    printf("Connected to the database");
+}
+$connection->close();
+
+?>
