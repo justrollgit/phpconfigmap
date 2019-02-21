@@ -1,14 +1,28 @@
 <style>
 <?php $ini_array = parse_ini_file("/config/app.properties");   ?>
   body {background-color:  <?php print($ini_array['color']); ?> }
+  
+  div.container {
+    height: 10em;
+    position: relative }
+  
+  div.container p {
+    margin: 0;
+    background: yellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) }
+  
 </style>
 
 
-<h1>Welcome to our little demo </h1>
-<br>
-<b>Hostname</b> : <?php echo gethostname();  ?>
-<br>
-
+<div class=container>
+  <p>
+    <h1>Welcome to our little demo </h1>    <br>
+     <b>Hostname</b> : <?php echo gethostname();  ?>
+     <br>
 <?php
 $dburi = getenv("uri");
 $dbhost = parse_url($dburi)['host'];
@@ -25,3 +39,6 @@ if ($connection->connect_errno) {
 $connection->close();
 
 ?>
+  </p>
+</div>
+
